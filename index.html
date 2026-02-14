@@ -1,393 +1,364 @@
-<!DOCTYPE HTML>
-<!--
-	Story by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Zergling's Personal Website</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel="icon" href="images/zergling.ico" type="image/x-icon" />
-		<link rel="shortcut icon" href="images/zergling.ico" type="image/x-icon" />
-	</head>
-	<body class="is-preload">
-		
-		<!-- Wrapper -->
-			<div id="wrapper" class="divided">
-				
-				<!-- One -->
-					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-						<div class="content">
-							<h2>Hi！我是 Zergling！</h2>
-							<p class="major">朋友，很高興見到你！<br>歡迎來到我的個人網站！</p>
-							<div class="caption">
-								<ul class="actions fixed">
-									<li><span class="button small"><a href="https://zergling73.com/Blog/" target="_blank"><p>部落格</p></a></span></li>
-									<li><span class="button small"><a href="https://zergling73.com/PRTS/" target="_blank"><p>子網站列表</p></a></span></li>
-								</ul>
-							</div>
-						</div>
-						<div class="image">
-							<img src="images/rabbitpic.jpg" alt="" />
-						</div>
-					</section>
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zergling73 | Portal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --bg-color: #0f0f11;     /* 深色背景：墨色 */
+            --text-primary: #e0e0e0; /* 淺灰文字：宣紙感 */
+            --text-dim: #888;        /* 次要文字 */
+            --accent-color: #cf2e2e; /* 點綴色：印泥紅 */
+            --tech-dim: #333;        /* 科技灰 */
+        }
 
-				<!-- Two -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
-						<div class="content">
-							<h2>關於我</h2>
-							<p class="major">在高一時開始接觸資訊科技領域<br>志向是往資訊領域相關科系邁進<br>興趣是關注市面上的消費級電子產品<br>像是手機SoC、電腦硬體等等<br>同時也對幣圈、資安、演算法等領域充滿興趣</p>
-							
-						</div>
-						<div class="image">
-							<img src="images/WHSH.png" alt="" />
-						</div>
-					</section>
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            font-family: 'Noto Serif TC', serif; /* 預設古風字體 */
+        }
 
-				<!-- Three -->
-					<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in ">
-						<div class="content">
-							<h2><del>可能</del>具備的能力</h2>
-							<li style="list-style-position:outside;">基礎C++</li>
-							<li style="list-style-position:outside;">基礎Python</li>
-							<li style="list-style-position:outside;">Arduino 機器人程式設計</li>
-							<li style="list-style-position:outside;">電腦硬體組裝</li>
-							<li style="list-style-position:outside;">手機Root</li>
-						</div>
-						<div class="image">
-							<img src="images/page3.jpg" alt="" />
-						</div>
-					</section>
+        /* === 背景裝飾：呼吸圓環 === */
+        .bg-circle {
+            position: absolute;
+            width: 65vh;
+            height: 65vh;
+            border: 1px solid var(--tech-dim);
+            border-radius: 50%;
+            opacity: 0.3;
+            z-index: -1;
+            animation: breathe 8s infinite ease-in-out;
+            pointer-events: none;
+        }
 
-				<!-- Four -->
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-						<div class="content">
-							<h2>經歷</h2>
-							<p>(活動、組織參與)</p>
-						<li style="list-style-position:outside;">
-							中部高中電資社團聯合會議(第三屆)--活動組
-						</li>
-						<li style="list-style-position:outside;">
-							知資為資知-2024中部電資聯合寒訓--隊輔
-						</li>
-						<li style="list-style-position:outside;">
-							Women@Google X 嘉新兆福基⾦「從心開始，自信前行」--學員
-						</li>
-						<li style="list-style-position:outside;">
-							班級資訊股長--通靈師
-						</li style="list-style-position:outside;">
-						</div>
-						<div class="image">
-							<img src="images/page4.jpg" alt="" />
-						</div>
-					</section>
+        @keyframes breathe {
+            0%, 100% { transform: scale(1); opacity: 0.15; border-color: #333; }
+            50% { transform: scale(1.02); opacity: 0.35; border-color: #555; }
+        }
 
-				<!-- Five -->
-					<section class="wrapper style1 align-center">
-						<div class="inner">
-							<h2>各式競賽紀錄</h2>
-							<!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p> -->
-						</div>
+        .container {
+            position: relative;
+            display: flex;
+            flex-direction: row-reverse; /* 右邊簡介，左邊功能 */
+            gap: 5rem;
+            padding: 2rem;
+            max-width: 1000px;
+            height: 70vh;
+            border-right: 1px solid var(--tech-dim); /* 右側裝飾線 */
+        }
 
-						<!-- Gallery -->
-							<div class="gallery style2 medium lightbox onscroll-fade-in">
-							<!-- 0 -->
-								<article>
-									<a href="images/gallery/overlook.jpg" class="image">
-										<img src="images/gallery/overlook.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>2024仰望盃全國科學HomeRun實作大賽--決賽優等獎</h3>
-										<!-- <ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul> -->
-									</div>
-								</article>
-							<!-- 1 -->
-								<article>
-									<a href="images/gallery/34aercsport.jpg" class="image">
-										<img src="images/gallery/34aercsport.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>2023年第34屆AERC亞洲機器人運動競技大賽--佳作</h3>
-										<!-- <ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul> -->
-									</div>
-								</article>
-							<!-- 2 -->
-								<article>
-									<a href="images/gallery/2023python.jpg" class="image">
-										<img src="images/gallery/2023python.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>2023虎科資管盃全國高中職Python多元學習暨程式設計進階競賽--優質潛力獎</h3>
-										<!-- <ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul> -->
-									</div>
-								</article>
-							<!-- 3 -->
-								<article>
-									<a href="images/gallery/34aercsmart.jpg" class="image">
-										<img src="images/gallery/34aercsmart.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>第34屆AERC 2023亞洲智慧型機器人大賽C03機器人遙控避障挑戰高中職B1組--佳作</h3>
-										<!-- <ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul> -->
-									</div>
-								</article>
-							<!-- 4 -->
-								<article>
-									<a href="images/gallery/2023robot.jpg" class="image">
-										<img src="images/gallery/2023robot.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>2023全國機器人互動競賽--第三名</h3>
-										<!-- <ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul> -->
-									</div>
-								</article>
-							<!-- 5 -->
-								<!-- <article>
-									<a href="images/gallery/fulls/05.jpg" class="image">
-										<img src="images/gallery/thumbs/05.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ultrices Magna</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article> -->
-							<!-- 6 -->
-								<!-- <article>
-									<a href="images/gallery/fulls/06.jpg" class="image">
-										<img src="images/gallery/thumbs/06.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Sed Tempus</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article> -->
-							<!-- 7 -->
-								<!-- <article>
-									<a href="images/gallery/fulls/07.jpg" class="image">
-										<img src="images/gallery/thumbs/07.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ipsum Lorem</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article> -->
-							<!-- 8 -->
-								<!-- <article>
-									<a href="images/gallery/fulls/08.jpg" class="image">
-										<img src="images/gallery/thumbs/08.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Magna Risus</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article> -->
-							<!-- 9 -->
-								<!-- <article>
-									<a href="images/gallery/fulls/09.jpg" class="image">
-										<img src="images/gallery/thumbs/09.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Tempus Dolor</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article> -->
-							<!-- 10 -->
-								<!-- <article>
-									<a href="images/gallery/fulls/10.jpg" class="image">
-										<img src="images/gallery/thumbs/10.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Sed Etiam</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article> -->
-							<!-- 11 -->
-								<!-- <article>
-									<a href="images/gallery/fulls/11.jpg" class="image">
-										<img src="images/gallery/thumbs/11.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Magna Lorem</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article> -->
-							<!-- 12 -->
-								<!-- <article>
-									<a href="images/gallery/fulls/12.jpg" class="image">
-										<img src="images/gallery/thumbs/12.jpg" alt="" />
-									</a>
-									<div class="caption">
-										<h3>Ipsum Dolor</h3>
-										<p>Lorem ipsum dolor amet, consectetur magna etiam elit. Etiam sed ultrices.</p>
-										<ul class="actions fixed">
-											<li><span class="button small">Details</span></li>
-										</ul>
-									</div>
-								</article>
-							</div> -->
+        /* === 右側：個人靈魂區 (直排) === */
+        .profile-section {
+            writing-mode: vertical-rl; /* 直排模式 */
+            text-orientation: upright; /* 漢字直立 */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
 
-					</section>
+        h1 {
+            font-size: 3rem; 
+            font-weight: 700;
+            margin: 0 0 1.5rem 0;
+            color: var(--text-primary);
+            letter-spacing: 0.2rem;
+            line-height: 1.2;
+        }
 
-				<!-- Six -->
-					<!-- <section class="wrapper style1 align-center">
-						<div class="inner">
-							<h2>Ipsum sed consequat</h2>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
-							<div class="items style1 medium onscroll-fade-in">
-								<section>
-									<span class="icon style2 major fa-gem"></span>
-									<h3>Lorem</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-save"></span>
-									<h3>Ipsum</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-chart-bar"></span>
-									<h3>Dolor</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-wifi"></span>
-									<h3>Amet</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-cog"></span>
-									<h3>Magna</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon style2 major fa-paper-plane"></span>
-									<h3>Tempus</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-desktop"></span>
-									<h3>Aliquam</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-sync-alt"></span>
-									<h3>Elit</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-hashtag"></span>
-									<h3>Morbi</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-bolt"></span>
-									<h3>Turpis</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-envelope"></span>
-									<h3>Ultrices</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-								<section>
-									<span class="icon solid style2 major fa-leaf"></span>
-									<h3>Risus</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dui turpis, cursus eget orci amet aliquam congue semper. Etiam eget ultrices risus nec tempor elit.</p>
-								</section>
-							</div>
-						</div>
-					</section> -->
+        .bio {
+            font-size: 1.1rem;
+            color: var(--text-dim);
+            line-height: 2;
+            letter-spacing: 0.2rem;
+            border-top: 2px solid var(--accent-color); /* 頂部紅線 */
+            padding-top: 1.5rem;
+            margin-right: 0.5rem;
+        }
 
-				<!-- Seven --> 
-				<!--
-					<section class="wrapper style1 align-center">
-						<div class="inner medium">
-							<h2>Get in touch</h2>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field half">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" value="" />
-									</div>
-									<div class="field half">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" value="" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="6"></textarea>
-									</div>
-								</div>
-								<ul class="actions special">
-									<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
-								</ul>
-							</form>
+        /* 紅色落款印章 */
+        .seal {
+            width: 3rem;
+            height: 3rem;
+            border: 2px solid var(--accent-color);
+            color: var(--accent-color);
+            writing-mode: horizontal-tb; /* 印章內部橫排 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-top: 2rem; 
+            margin-left: 0; 
+            opacity: 0.9;
+            user-select: none;
+            box-shadow: 0 0 10px rgba(207, 46, 46, 0.2); /* 微微發光 */
+        }
 
-						</div>
-					</section>
-					-->
-				<!-- Footer -->
-					<footer class="wrapper style1 align-center">
-						<div class="inner">
-							<ul class="icons">
-								<li><a href="https://www.facebook.com/KillersWithEnder/" class="icon brands style2 fa-facebook-f" target="_blank"><br>Facebook</a></li>
-								<li><a href="https://www.instagram.com/zergling_73" class="icon brands style2 fa-instagram" target="_blank"><br>Instagram</a></li>
-								<li><a href="https://github.com/Makino-Shiro" class="icon brands style2 fa-github" target="_blank"><br>Github</a></li>
-								<li><a href="https://discordapp.com/users/997119532411924591" class="icon brands style2 fa-discord" target="_blank"><br>Discord</a></li>
-							</ul>
-							<p>
-								&copy 2024 - 
-								<script> document.write(new Date().getFullYear())
-								</script>
-								&nbsp Cheng-Wei, Yu<br>
-								Design&nbsp:&nbsp<a href="https://html5up.net" target="_blank">HTML5 UP</a>
-							</p>
-						</div>
-					</footer>
-			</div>
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        /* === 左側：功能數據區 (橫排) === */
+        .left-panel {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-width: 300px;
+        }
 
-	</body>
+        /* --- 新增：Terminal 風格 ID 展示 --- */
+        .terminal-id {
+            font-family: 'Space Mono', monospace;
+            font-size: 1.1rem;
+            color: var(--text-primary);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            opacity: 0.9;
+        }
+
+        .prompt {
+            color: var(--accent-color);
+            font-weight: bold;
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .user-id {
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-shadow: 0 0 8px rgba(224, 224, 224, 0.2);
+        }
+
+        .cursor {
+            color: var(--accent-color);
+            animation: blink-cursor 1s step-end infinite;
+            font-weight: bold;
+        }
+
+        @keyframes blink-cursor {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+
+        /* --- 連結按鈕組 --- */
+        .links-group {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            margin-bottom: 3rem; /* 與下方經歷區拉開距離 */
+        }
+
+        .link-item {
+            font-family: 'Space Mono', monospace;
+            text-decoration: none;
+            color: var(--text-primary);
+            border: 1px solid var(--tech-dim);
+            padding: 1rem 1.5rem;
+            font-size: 0.95rem;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            background: rgba(15, 15, 17, 0.8);
+        }
+
+        .link-item:hover {
+            border-color: var(--text-primary);
+            background: rgba(255, 255, 255, 0.08);
+            padding-left: 2rem;
+            text-shadow: 0 0 5px rgba(255,255,255,0.5);
+        }
+
+        .link-item::before {
+            content: '';
+            position: absolute;
+            left: 0; top: 0; bottom: 0;
+            width: 3px;
+            background-color: var(--accent-color);
+            transform: scaleY(0);
+            transition: transform 0.3s ease;
+        }
+        .link-item:hover::before { transform: scaleY(1); }
+
+        .number {
+            color: var(--tech-dim);
+            font-size: 0.8rem;
+        }
+
+        /* --- 經歷/成就 (系統日誌風格) --- */
+        .achievements-box {
+            border-left: 1px dashed var(--tech-dim);
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .log-title {
+            font-family: 'Space Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        /* 呼吸燈點點 */
+        .log-title::before {
+            content: '';
+            width: 6px; height: 6px;
+            background-color: var(--accent-color);
+            border-radius: 50%;
+            animation: blink 2s infinite;
+        }
+
+        .log-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-family: 'Space Mono', monospace;
+            font-size: 0.85rem;
+            color: var(--text-dim);
+        }
+
+        .log-item {
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: baseline;
+            gap: 0.8rem;
+            transition: color 0.3s;
+        }
+        
+        .log-item:hover {
+            color: var(--text-primary);
+        }
+
+        .log-year {
+            color: var(--tech-dim);
+            font-size: 0.75rem;
+            min-width: 35px;
+        }
+
+        .rank-highlight {
+            color: var(--text-primary);
+            border-bottom: 1px solid var(--accent-color);
+            padding-bottom: 2px;
+        }
+
+        @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+
+        /* === 手機版適配 === */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                height: auto;
+                border-right: none;
+                gap: 3rem;
+                padding-top: 4rem;
+                padding-bottom: 4rem;
+            }
+            .profile-section {
+                writing-mode: horizontal-tb;
+                align-items: center;
+                text-align: center;
+            }
+            h1 {
+                font-size: 2.5rem;
+                border-bottom: 1px solid var(--tech-dim);
+                padding-bottom: 1rem;
+                margin-bottom: 1rem;
+                letter-spacing: 0.1rem;
+            }
+            .bio {
+                border-top: none;
+                padding-top: 0;
+                margin-right: 0;
+            }
+            .seal { display: none; } /* 手機版隱藏印章 */
+            
+            .left-panel {
+                width: 100%;
+                gap: 2rem;
+            }
+            .achievements-box {
+                border-left: none;
+                border-top: 1px dashed var(--tech-dim);
+                padding-left: 0;
+                padding-top: 1.5rem;
+            }
+            .terminal-id {
+                justify-content: center; /* 手機版 ID 置中 */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-circle"></div>
+
+    <div class="container">
+        
+        <div class="profile-section">
+            <h1>仍未迷途 仍為迷途</h1>
+            
+            <div class="bio">
+                虛實之間。記錄與分享。<br>
+                </div>
+
+            <div class="seal">參</div>
+        </div>
+
+        <div class="left-panel">
+            
+            <div class="terminal-id">
+                <span class="prompt">root@portal:~$</span>
+                <span class="user-id">Zergling73</span><span class="cursor">_</span>
+            </div>
+            
+            <div class="links-group">
+                <a href="https://zergling73.com/Blog" class="link-item" target="_blank">
+                    <span>>_ BLOG</span>
+                    <span class="number">01</span>
+                </a>
+                
+                <a href="https://fcuhackersir.org" class="link-item" target="_blank">
+                    <span>>_ LINKTREE</span>
+                    <span class="number">02</span>
+                </a>
+            </div>
+
+            <div class="achievements-box">
+                <div class="log-title">SYSTEM_LOGS // AWARDS</div>
+                <ul class="log-list">
+                    <li class="log-item">
+                        <span class="log-year">[24]</span>
+                        <span>神盾盃決賽 <span class="rank-highlight">Rank.7</span></span>
+                    </li>
+                    <li class="log-item">
+                        <span class="log-year">[23]</span>
+                        <span>中電會 <span class="rank-highlight">第三屆活動組</span></span>
+                    </li>
+                    <li class="log-item">
+                        <span class="log-year">[22]</span>
+                        <span>APCS <span class="rank-highlight">3 3</span></span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+</body>
 </html>
